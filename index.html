@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7de594f679.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+
+                    <img src="images/anuj_logo_in_png_format-transformed.jpeg" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, cum accusantium. Ad sunt accusamus quidem velit corporis. Porro officiis itaque ea aspernatur odit! Minus, eius? Sequi incidunt illum blanditiis totam.
+                    Eveniet libero porro, debitis rem non, et esse quibusdam, facilis mollitia architecto minima ipsam reprehenderit aliquam. Nemo eos molestiae accusantium soluta et perferendis harum saepe rem vero, consequuntur delectus nulla?
+                    Assumenda delenitiia quaerat dolorem impedit, perspiciatis, placeat facere aliquam ullam adipisci similique, praesentium omnis ea nesciunt commodi voluptas porro nostrum magni iste quo! Magni possimus ipsum consequuntur nihil.
+                    Veritatis, quam cupiditate, sapiente excepturi esse aut modi debitis corporis eos minima adipisci cum soluta. Dolores maxime fugiat ipsum mollitia ut quae corporis fuga praesentium cumque. Voluptatem blanditiis recusandae inventore.</p>
+                </div>
+                <div class="my">
+                    <img src="images/profile-pic.png" alt="me">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+     <div id="about">
+        <div class="store_about">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/me2.jpeg" >
+                </div>
+                <div class="col2">
+                    <h1 class="row2">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, minima ex nostrum possimus enim iusto 
+                        voluptatibus! Cumque, quidem illum omnis inventore tempore alias quae, aut aperiam veritatis, eligendi nihil officia.</p>
+                        <div class="details">
+                            <p class="education active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="education " onclick="opentab('experi')">Exprencies</p>
+                            <p class="education" onclick="opentab('edu')">Education</p>
+                        </div>
+                        <div class="tabs active-tab" id ="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web Pages</li>
+                                <li><span>Web Development</span><br>Web app development</li>
+                                <li><span>App Development</span><br>Building Android ios apps</li>
+                                <li><span>Software Developer</span><br>Building new objects and algorithms</li>
+                            </ul>
+                        </div>
+                        <!--expriences-->
+                        <div class="tabs" id ="experi">
+                            <ul>
+                                <li><span>2024 - Current</span><br>UI/UX design training from FreeCodeCamp</li>
+                                <li><span>2025 - Probably</span><br>Web Developer intern at Flipkart</li>
+                                <!-- <li><span>App Development</span><br>Building Android ios apps</li> -->
+                                <li><span>2025 - Probably</span><br>Software Developer intern at Microsoft</li>
+                            </ul>
+                        </div>
+                        <!--education-->
+                        <div class="tabs" id = "edu">
+                            <ul>
+                                <li><span>2023-2027</span><br>Lovely Proffessional University</li>
+                                <li><span>2021-2023</span><br>Ruzhukhrie Government Higher secondary school</li>
+                                <li><span>2009-2021</span><br>Modern School Kohima</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+<!-- _______________Services Provided___________________ -->
+<div id="services">
+    <div class="container">
+        <h1 class="row2">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creating captivating, functional websites that engage users and elevate brand presence.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating beautiful, user-friendly interfaces with attention to detail and empathy for user needs..</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>App Design</h2>
+                <p>Developing intuitive, visually appealing mobile applications that enhance user experience and drive engagement.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-skull-crossbones"></i>
+                <h2>Software Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectuam.</p>
+                    <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- __________portfolio_________ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="row2">My Work</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="images/portfolio-2.png" >
+                <div class="layers">
+                    <h3>Population count website</h3>
+                    <p>Here it shows the Population of the world and also how its increasing</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layers">
+                    <h3>Pet Adpotion website</h3>
+                    <p>Here anyone can donate or adopt pets</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/portfolio-6.png" alt="">
+                <div class="layers">
+                    <h3>Web Design</h3>
+                    <p>Design websites without backend</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <!-- <div class="work">
+                <img src="images/portfolio-4.png" alt="">
+            </div> -->
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+<!-- _________contact_______ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub_title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>anujksah123@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>9031509145</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anuj-kumar-3084b628a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/Anuj-kumar-53"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://stackoverflow.com/users/23044859/anuj-kumar"><i class="fa-brands fa-stack-overflow"></i></a>
+                </div>
+                <a href="images/Anuj.cv.pdf" download class="btn2">Download CV</a>
+                <a href="" download class="btn2">Know__ More</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  placeholder="Your Message" rows="5"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="copy-right">
+        <p>Copyright @ Anuj</p>
+    </div>
+ </div>
+
+ 
+    
+
+    <script>
+var educations = document.getElementsByClassName("education");
+var tabbox = document.getElementsByClassName("tabs");
+
+function opentab(tabname) {
+
+    for (let education of educations) {
+        education.classList.remove("active-link");
+    }
+    for (let tab of tabbox) {
+        tab.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+    </script> 
+</body>
+</html>
