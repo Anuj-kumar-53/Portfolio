@@ -57,18 +57,36 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.about{
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
 .intro{
     display: flex;
-    margin-top: 60px;
+    align-items: center;
+    max-width: 60%;
+    padding: 20px;
+
 }
 .my img{
     height: 350px;
     width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* ____________about_section___________ */
 #about{
     padding: 80px 0px;
     color: #ababab;
+}
+.highlight{
+  background: rgb(255, 255, 255);
+  padding: 2px;
+  margin: 10px 0;
+  border-radius: 20px;
+  color: #080800;
 }
 .row{
     display: flex;
@@ -256,6 +274,8 @@ flex-basis: 60%;
 /*____________contacts________*/
 .contact-left{
     flex-basis: 35%;
+    align-items: center;
+    justify-content: center;
 }
 .contact-right{
     flex-basis: 60%;
@@ -285,9 +305,8 @@ flex-basis: 60%;
     transform: translate(-5px);
 }
 .btn2{
-    display: inline-block;
    
-    display: block;
+    display: flex;
     width: fit-content;
     border: 1px solid #ff004f;
     border-radius: 6px;
@@ -344,8 +363,122 @@ form .btn2{
 }
 /* ______________css for small screen or responsive________
  */
- @media only screen and(max-width: 600px){
-    .intro{
-        
+ /* Add media queries for responsive design */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+      padding: 10px 5%;
     }
- }
+    .intro {
+      flex-direction: column;
+    }
+    .my img {
+      height: 250px;
+      width: 250px;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .col1 {
+      flex-basis: 100%;
+      padding-left: 0;
+    }
+    .col2 {
+      flex-basis: 100%;
+    }
+    .service-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .work-list {
+      flex-direction: column;
+    }
+    .work {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .nav ul li {
+      margin: 10px 10px;
+    }
+    .nav ul li a {
+      font-size: 16px;
+    }
+    .intro {
+      margin-top: 40px;
+    }
+    .my img {
+      height: 200px;
+      width: 200px;
+    }
+    .service-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      align-items: center;
+    }
+    .work {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+    }
+    .nav ul li {
+      margin: 10px 0;
+    }
+    .nav ul li a {
+      font-size: 14px;
+    }
+    .intro {
+      margin-top: 20px;
+    }
+    .my img {
+      height: 150px;
+      width: 150px;
+      display: flex;
+      align-items: center;
+    }
+    .service-list {
+      grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .work {
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .nav {
+      flex-direction: column;
+    }
+    .nav ul li {
+      margin: 5px 0;
+    }
+    .nav ul li a {
+      font-size: 12px;
+    }
+    .intro {
+      margin-top: 10px;
+    }
+    .my img {
+      height: 100px;
+      width: 100px;
+    }
+    .service-list {
+      grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .work {
+      margin-bottom: 2px;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .btn2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
